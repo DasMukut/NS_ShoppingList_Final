@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { AppContext } from "../context";
-
 function Header() {
   const { dispatchItemEvent, showDisplay } = useContext(AppContext);
   const handlebutton = () => {

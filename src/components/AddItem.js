@@ -33,7 +33,7 @@ const AddItem = () => {
 
       <label>Quantity</label>
       <input
-        type="text"
+        type="number"
         value={quantity}
         onChange={(e) => {
           setQuantity(e.target.value);
@@ -45,7 +45,7 @@ const AddItem = () => {
 
       <label>Price</label>
       <textarea
-        type="text"
+        type="number"
         value={price}
         onChange={(e) => {
           setPrice(e.target.value);

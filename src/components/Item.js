@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../context";
-// import /item.css
+// import "./item.css";
 const Item = ({ item }) => {
   const { dispatchItemEvent } = useContext(AppContext);
 
@@ -8,7 +8,7 @@ const Item = ({ item }) => {
     dispatchItemEvent("REMOVE_ITEM", { itemId: item.id });
   };
   return (
-    <div className="Item">
+    <div className="Item" style>
       <h3>{item.title}</h3>
       <h4>{item.quantity}</h4>
       <h4>{item.price}</h4>
